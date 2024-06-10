@@ -9,7 +9,7 @@ import edge_tts
 import asyncio
 
 
-genai.configure(api_key="AIzaSyCpBB_5BjbbekcAaCiU2q1wIi4mBmL-h-g")
+genai.configure(api_key="YOUR_API_KEY")
 
 
 generation_config = {
@@ -45,7 +45,7 @@ model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
 
 convo = model.start_chat()
 
-with open(r"D:\Python\Projects\Iris\prompt.txt", "r", encoding="utf-8") as file:
+with open(r"PATH_TO_PROMPT.TXT", "r", encoding="utf-8") as file:
     prompt = file.read()
     file.close()
 
