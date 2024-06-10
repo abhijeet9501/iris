@@ -1,7 +1,7 @@
 import google.generativeai as gem
 import re
 
-gem.configure(api_key="AIzaSyDeksTEF53JrMLymSJ7NwWTFN5j2fo2c9s")
+gem.configure(api_key="YOUR_API_KEY")
 
 generation_config = {
     "temperature": 1.5,
