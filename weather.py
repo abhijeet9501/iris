@@ -2,11 +2,11 @@ import wolframalpha
 import requests
 
 
-app_id = 'PUYG5V-8QX5GE6VAT'
+app_id = 'WOLFRAMALPHA_app_id'
 app = wolframalpha.Client(app_id)
-api_key = '5a3bf3f6e067ac01a49e704f0d41470e'
+api_key = 'WOLFRAMALPHA_api_key'
 
-news_api_key = '59dbae77bd204023adc74d22e555ceae'
+news_api_key = 'NEWS_API_KEY'
 
 
 def weather(query):
