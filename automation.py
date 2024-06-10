@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 import pywhatkit
 
-chrome_path = r'C:\Users\swami\AppData\Local\Google\Chrome\User Data\Profile 2'
+chrome_path = r'C:\Users\user\AppData\Local\Google\Chrome\User Data\Profile 2' # Your chrome Path
 
 
 def chrome(url):
@@ -27,7 +27,6 @@ def chrome(url):
     options.add_argument('--disable-blink-features=UseEmojiCharacters')
     options.add_argument('--enable-features=UseEmojiCharacters')
     options.add_argument('--disable-blink-features=AutomationControlled')
-    # options.add_argument("--headless=new")
     options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
